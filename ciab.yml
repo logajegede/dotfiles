@@ -1,0 +1,14 @@
+# ~/.tmuxinator/ciab.yml
+
+name: ciab
+root: ~/working_title/ciab/twelveshifts
+
+startup_window: terminal
+
+windows:
+  - terminal:
+  - editor:
+    - vim -S Session.vim
+  - server: be rails server
+  - console: be rails console
+  - logs:
